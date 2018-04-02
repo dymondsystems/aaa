@@ -1,0 +1,855 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- meta tags -->
+  <title>Welcome to Dymond sytems</title>
+  <meta name="keywords" content="painting, remodeling, deck builder, construction, flooring, tile, cabinets, landscaping,">
+  <meta name="description" content="Construction company serving Yadkinville, winston salem, Clemmons and the entire triad">
+  <link rel="icon" 
+      type="image/png" 
+      href="http://example.com/myicon.png">
+  
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://ajax.cloudflare.com/cdn-cgi/scripts/935cb224/cloudflare-static/rocket.min.js">
+<script defer src="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="http://dymondsystems.com/dymondsystems/header.js"></script>
+  <style>
+   .modal-header, h5, .close {
+      background-color: #00accd;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+      height: 20px;
+  }
+  .modal-header, .modal-body {
+      padding: 70px 50px;
+  }
+  
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: black;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #00accd;
+      font-size: 50px;
+  }
+  .logo {
+      color: #00accd;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #00accd;
+  }
+  .carousel-indicators li {
+      border-color: #00accd;
+  }
+  .carousel-indicators li.active {
+      background-color: #00accd;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #00accd; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #00accd !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+
+  .navbar {
+  height: 70px;
+      margin-bottom: 0;
+      background-color: black;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #00accd  !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #fff!important;
+      background-color: #00accd  !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #00accd  !important;
+  
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+      }
+      
+      .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #00accd;
+      color: #fff;
+      
+      }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #00accd;
+      }
+      footer {
+      background-color: black;
+      
+      }
+  .panel-footer .btn:hover {
+      border: 1px solid #00accd;
+      background-color: #fff !important;
+      color: #00accd;
+  }
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+        
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+        
+    }
+  }
+  
+  #spin {
+  color:#00accd;
+}
+
+a {color: white;}
+  a:hover {color: ;}
+  
+  
+i {color: #00accd;}
+  a:hover {color: ;}
+  
+  p1 {color: red;}
+  a:hover {color: ;}
+  
+   p2 {color: grey;}
+ 
+  
+#spin:after {
+  content:"";
+  -webkit-animation: spin 30s linear infinite;
+   -ms-animation: spin 30s linear infinite;
+    animation: spin 30s linear infinite;
+}
+@keyframes spin {
+  0% { content:"to remodel my home"; }
+  10% { content:"to repair my home"; }
+  20% { content:"a new kitchen"; }
+  30% { content:"a new bathroom"; }
+  40% { content:"to paint my home"; }
+  50% { content: "new floors"; }
+  60% { content: "property management"; }
+  70% { content: "a new deck"; }
+  80% { content: "a new addition"; }
+  90% { content: "to save energy"; }
+}
+.text-wrapper {
+    text-align: center;
+}
+.animated-words {
+    text-align: center;
+    
+}
+.animated-words span:nth-child(2) { 
+    -webkit-animation-delay: 1s; 
+    -ms-animation-delay: 1s; 
+    animation-delay: 1s; 
+    color: #6b889d;
+}
+.animated-words span:nth-child(3) { 
+    -webkit-animation-delay: 2s; 
+    -ms-animation-delay: 2s; 
+    animation-delay: 2s; 
+    color: #6b739d; 
+}
+.animated-words span:nth-child(4) { 
+    -webkit-animation-delay: 3s; 
+    -ms-animation-delay: 3s; 
+    animation-delay: 3s; 
+    color: #7a6b9d;
+}
+.animated-words span:nth-child(5) { 
+    -webkit-animation-delay: 4s; 
+    -ms-animation-delay: 4s; 
+    animation-delay: 4s; 
+    color: #8d6b9d;
+}
+.animated-words span:nth-child(6) { 
+    -webkit-animation-delay: 5s; 
+    -ms-animation-delay: 5s; 
+    animation-delay: 5s; 
+    color: #9b6b9d;
+}
+.animated-words span {
+    position: left;
+    opacity: 0;
+    overflow: hidden;
+    color: #6b969d;
+    -webkit-animation: animateWord 9s linear infinite 0s;
+    -ms-animation: animateWord 9s linear infinite 0s;
+    animation: animateWord 9s linear infinite 0s;
+}
+@-webkit-keyframes animateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+    5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+    20% { opacity: 0; -webkit-transform: translateY(30px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+
+
+  </style>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">     <img src="https://github.com/dymondsystems/dymondsystems/blob/master/dymond-logo-black.png?raw=true" alt="New York" width="90" height="50"></a>
+   
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        
+        <li><a href="#contact">CONTACT</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+     <div class="text-wrapper">
+   
+    <div class="animated-words">
+        <h1><span>Painting</span>
+        <span>Construction</span>
+        <span>Drywall</span>
+        <span>Roofing</span>
+        <span>Flooring</span>
+        <span>+ More</span></h1>
+    </div>    
+</div>
+
+  <p>One company, endless possibilities</p>
+  
+
+
+  
+ 
+
+
+  
+  <br>
+  
+  
+   <button class="btn btn-default btn-lg"style="font-size:30px;background-color:#00accd; color: white; border: none;"> <a href="#contact">Contact us</a></button>
+
+   
+</div>
+ <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+      
+          <button type="button" class="close" data-dismiss="modal"></button>
+          <h1>Contact</h1>
+    
+        </div>
+        
+         
+        <div class="modal-body">
+        <form role="form">
+            <div class="form-group">
+              <label for="psw">
+       <i class="fa fa-phone fa-fw"></i> Call
+         
+          <p2>336-422-6091</p2>
+             
+              <div> <i class="fa fa-comment fa-fw"></i> Text
+             <br>
+             <a href="sms:/13362449006/&body=Hello!" class="btn btn-success btn-lg">
+    <span class="glyphicon glyphicon"></span> Send message
+    
+  </a></div>
+  
+                  <i class="fa fa-envelope fa-fw"></i> 
+                   
+                    Email us
+                    <br>
+            <a href="mailto:hello@dymondsystems.com">  <p2>hello@dymondsystems.com</p2>
+    
+  </a> 
+  
+  
+
+            </div>
+             
+            </div>
+         
+
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p>Need <a href="#">help?</a></p>
+        </div>
+            </div>
+    </div>
+  </div>
+</div>
+
+
+  
+ 
+
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About us</h2><br>
+      <h3>We want to make your experience with renovation and repair contractors as seamless as possible by combining all services into a single entity.</h3><br>
+      <p>Thank you for your interest in Dymond! We offer a multitude of services from handy man work to property management. Service areas include Winston-Salem, NC
+Mocksville, NC
+Hamptonville, NC
+Advance, NC
+Yadkinville, NC
+Rural hall, NC
+Booneville, NC
+Clemmons, NC
+Statesville, NC
+Jonesville, NC
+High point, NC
+Archdale, NC and all surrounding areas.
+<br>
+<br>
+Our services include Painting, Drywall, Carpentry, Pressure washing, Deck building, Roofing, Landscaping, Electrical, Heating and air, Remodeling, Disaster restoration, Renovation just to name a few.
+</p>
+          <br>
+
+      
+      <button class="btn btn-default btn-lg"style="font-size:30px;background-color:#00accd; color: white; border: none;"> <a href="#contact">Get in touch</a></button>
+   
+
+    </div>
+    </div>
+      
+
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> 2528 Bethel Churd RD, Yadkinville, NC</p>
+      <span class="glyphicon glyphicon-phone"></span> <p2>336-422-6091</p2>
+      <br>
+                 <i class="glyphicon glyphicon-envelope"></i> 
+                   
+                    Email us
+                    <br>
+              <a href="mailto:hello@dymondsystems.com"><p2>hello@dymondsystems.com</p2>
+    
+  </a> 
+              
+             
+                 <div> <i class="fa fa-comment fa-fw"></i> Text
+             <br>
+             <a href="sms:/13362449006/&body=Hello!" class="btn btn-success btn-lg">
+    <span class="glyphicon glyphicon"></span> Send message
+    
+  </a></div>  
+             
+             
+    
+    <!--Social buttons-->
+    <div class="text-center">
+    <H3>LET'S CONNECT!</H3>
+        <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+                <a class="btn-floating btn-sm btn-fb mx-1">
+                                <a href="https://facebook.com/dymondsystems" rel="publisher">
+                    <i class="fa fa-facebook fa-3x"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-sm btn-tw mx-1">
+                <a href="https://twitter.com/dymondsystems" rel="publisher">
+                    <i class="fa fa-twitter fa-3x"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-sm btn-gplus mx-1">
+                <a href="https://instagram.com/dymondsystems" rel="publisher">
+                    <i class="fa fa-instagram fa-3x"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-sm btn-li mx-1">
+                <a href="https://pinterest.com/dymondsystems" rel="publisher">
+                    <i class="fa fa-pinterest fa-3x"> </i>
+                </a>
+           
+            </li>
+        </ul>
+    </div>
+ 
+ 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- pop up modal-->
+ 
+<div class="modal fade" id="overlay">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <h2 class="modal-title"><font color="white">Contact us</font></h2>
+      </div>
+ 
+      <div class="modal-body">
+        <p><font color="gray">Thank you for you interest. We're eager to answer your questions!</font>
+            <br>
+            <br>
+  <form role="form">
+            <div class="form-group">
+              <label for="psw">
+       <i class="fa fa-phone fa-fw"></i> Call
+         
+          <p2>336-422-6091</p2>
+          <br>
+          
+                       <i class="fa fa-envelope fa-fw"></i> 
+                   
+                    Email us
+                    <br>
+              <a href="mailto:hello@dymondsystems"><p2>hello@dymondsystems.com</p2>
+    
+  </a>
+             
+              <div> <i class="fa fa-comment fa-fw"></i> Text
+             <br>
+             <a href="sms:/13362449006/&body=Hello!" class="btn btn-success btn-lg">
+    <span class="glyphicon glyphicon"></span> Send message
+    
+  </a></div>
+
+            </div>
+            </div>
+       
+              
+ 
+            
+            
+   
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Not yet
+          </button>
+          <p>Need <a href="#">help?</a></p>
+        </div>
+            </div>
+    </div>
+  </div>
+</div>
+    
+<script>
+     
+  
+  
+
+setTimeout(function() {
+    $('#overlay').modal('show');
+}, 10000);  
+</script>
+
+
+
+
+
+
+                      
+<!--Footer-->
+
+<footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
+
+
+    <!--Footer Links-->
+    <div class="container text-center text-md-left">
+        <div class="row">
+
+            <!--First column-->
+            <div class="col-md-4">
+                <h4 class="text-uppercase mb-4 mt-3 font-weight-bold">Dymond systems</h4>
+                <p>We offer a vast variety of services</p>
+            </div>
+            <!--/.First column-->
+
+            
+
+            <!--Second column-->
+            <div class="col-md-2 mx-auto">
+                <h4 class="text-uppercase mb-4 mt-3 font-weight-bold">Areas served</h4>
+                <ul class="list-unstyled">
+                <li>
+                        <a href="#!">Winston-Salem, NC</a>
+                    </li>
+                    <li>
+                        <a href="#!">Mocksville, NC</a>
+                    </li>
+                    <li>
+                        <a href="#!">Hamptonville, NC</a>
+                    </li>
+                    <li>
+                        <a href="#!">Advance, NC</a>
+                    </li>
+                    <li>
+                        <a href="#!">Yadkinville, NC</a>
+                    </li>
+                    <li>
+                        <a href="#!">Rural hall, NC</a>
+                    </li>
+                    <li>
+                        <a href="#!">Booneville, NC</a>
+                    </li>
+                    <li>
+                        <a href="#!">Clemmons, NC</a>
+                    </li>
+                    <li>
+                        <a href="#!">Statesville, NC</a>
+                    </li>
+                    <li>
+                        <a href="#!">Jonesville, NC</a>
+                    </li>
+                    <li>
+                        <a href="#!">High point, NC</a>
+                    </li>
+                    <li>
+                        <a href="#!">Archdale, NC</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.Second column-->
+
+            
+
+            <!--Third column-->
+            <div class="col-md-2 mx-auto">
+                <h4 class="text-uppercase mb-4 mt-3 font-weight-bold">Services</h4>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">Painting</a>
+                    </li>
+                    <li>
+                        <a href="#!">Drywall</a>
+                    </li>
+                    <li>
+                        <a href="#!">Carpentry</a>
+                    </li>
+                    <li>
+                        <a href="#!">Pressure washing</a>
+                    </li>
+                    <li>
+                        <a href="#!">Deck building</a>
+                    </li>
+                    <li>
+                        <a href="#!">Roofing</a>
+                    </li>
+                    <li>
+                        <a href="#!">Landscaping</a>
+                    </li>
+                    <li>
+                        <a href="#!">Electrical</a>
+                    </li>
+                    <li>
+                        <a href="#!">Heating and air</a>
+                    </li>
+                    <li>
+                        <a href="#!">Remodeling</a>
+                    </li>
+                    <li>
+                        <a href="#!">Disaster restoration</a>
+                    </li>
+                    <li>
+                        <a href="#!">Renovation</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.Third column-->
+
+            
+
+            <!--Fourth column-->
+            <div class="col-md-2 mx-auto">
+                <h4 class="text-uppercase mb-4 mt-3 font-weight-bold">Other services</h4>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">Solar sytems</a>
+                    </li>
+                    <li>
+                        <a href="#!">Security systems</a>
+                    </li>
+                    <li>
+                        <a href="#!">Property management</a>
+                    </li>
+                    <li>
+                        <a href="#!">Industrial services</a>
+                    </li>
+                    <li>
+                        <a href="#!">Commercial property maintenance</a>
+                    </li>
+                    <li>
+                        <a href="#!">Retail installs</a>
+                    </li>
+                    <li>
+                        <a href="#!">Restaurant maintenance</a>
+                    </li>
+                    <li>
+                        <a href="#!">Design</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.Fourth column-->
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <hr>
+
+    
+    
+        <p><span class="glyphicon glyphicon-map-marker"></span> 2528 Bethel Church RD, Yadkinville, NC 27055</p>
+      <p2><span class="glyphicon glyphicon-phone"></span> 336-422-6091</p2>
+      <br>
+      <p2><span class="glyphicon glyphicon-envelope"></span> hello@dymondsystems.com</p2>
+    </div>
+    <!--/.Call to action-->
+
+    <hr>
+
+    <!--Social buttons-->
+    <div class="text-center">
+        <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+                <a class="btn-floating btn-sm btn-fb mx-1">
+                <a href="https://facebook.com/dymondsystems" rel="publisher">
+                    <i class="fa fa-facebook fa-2x"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-sm btn-tw mx-1">
+                <a href="https://twitter.com/dymondsystems" rel="publisher">
+                    <i class="fa fa-twitter fa-2x"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-sm btn-gplus mx-1">
+                <a href="https://instgram.com/dymondsystems" rel="publisher">
+                    <i class="fa fa-instagram fa-2x"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-sm btn-li mx-1">
+                                <a href="https://pinterest.com/dymondsystems" rel="publisher">
+                    <i class="fa fa-pinterest fa-2x"> </i>
+                </a>
+    
+
+        </ul>
+    </div>
+ 
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center">
+        © 2018 Copyright:
+        <a href="http://travissummerlin.com"> Travis Summerlin</a>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
+
